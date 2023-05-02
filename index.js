@@ -3,8 +3,7 @@ const highlight = document.querySelector('.highlight');
 const mobileNavBarIcon = document.getElementById("mobile-nav-bar-icon");
 const headerNavList = document.getElementById("header-nav-list");
 const firstTab = tabs[0];
-const modeChangeBtn = document.getElementById("mode-change");
-
+var icon =document.getElementById("mode-change");
 
 
 const left = firstTab.offsetLeft;
@@ -30,9 +29,15 @@ tabs.forEach(tab => {
     });
 });
 
-document.getElementById("mode-change").addEventListener("click", function() {
+icon.onclick = function(){
   document.body.classList.toggle("dark-theme");
-});
+  if(icon.className=="fa-solid fa-moon"){
+      icon.className="fa-solid fa-sun"; 
+  }else{
+      icon.className="fa-solid fa-moon"; 
+  }
+}
+
 
 
 mobileNavBarIcon.onclick = function() {
