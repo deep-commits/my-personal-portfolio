@@ -165,16 +165,16 @@ body{
     animation-delay: 1s;
 }
 .hero-content h1{
-    padding-top: 10px;
-    font-size: 45px;
+    
+    font-size: 25px;
 }
 .hero-content p{
-    padding-top: 40px;
-    font-size: 16px;
+    padding-top: 30px;
+    font-size: 14px;
     
 }
 .content-btn{
-    padding-top: 50px;
+    padding-top: 30px;
     animation: hero-btn 1s ease forwards;
 }
 .content-btn button{
